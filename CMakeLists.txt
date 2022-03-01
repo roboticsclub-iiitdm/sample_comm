@@ -11,8 +11,7 @@ catkin_package(CATKIN_DEPENDS roscpp rospy std_msgs)
 
 include_directories(${catkin_INCLUDE_DIRS})
 
-# add_executable(${PROJECT_NAME}_node src/sample_comm_node.cpp)
 
-# target_link_libraries(${PROJECT_NAME}_node
-#   ${catkin_LIBRARIES}
-# )
+# Add executables
+add_executable(hello_cpp src/hello.cpp)
+target_link_libraries(hello_cpp ${catkin_LIBRARIES})
